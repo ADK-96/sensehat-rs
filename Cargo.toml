@@ -10,3 +10,4 @@ homepage = "https://github.com/ADK-96/sensehat-rs"
 documentation = "https://docs.rs/sensehat-rs"
 readme = "README.md"
 [dependencies]
+evdev = "0.13.1"
