@@ -1,0 +1,23 @@
+# ---- Rust & Cargo ----
+/target
+**/*.rs.bk
+
+# ---- IDEs & Editors ----
+.vscode/
+.idea/
+*.iml
+*~
+*.swp
+*.swo
+*.sublime-workspace
+*.sublime-project
+
+# ---- Others ----
+.DS_Store
+Thumbs.db
+
+# ---- Cargo & Package Management ----
+/Cargo.lock
+
+# ---- Tests/Debug ----
+/logs/
