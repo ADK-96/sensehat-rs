@@ -22,7 +22,7 @@ impl LedMatrix {
         let fb = OpenOptions::new()
             .read(true)
             .write(true)
-            .open("/dev/fb0")?; // <- Change to your specific path!
+            .open("/dev/fb0")?; // <- could be "/dev/fb1" -> Change to your specific path!
         Ok(LedMatrix {fb})
     }
 
