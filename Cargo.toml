@@ -1,7 +1,7 @@
 [package]
 name = "sensehat-rs"
 version = "0.1.2"
-authors = ["Alexander Kotselidis <kotselidis.alex96@pm.me>"]
+authors = ["Alexander Kotselidis <adk_96@proton.me>"]
 edition = "2024"
 description = "A modern Rust library to control the Raspberry Pi Sense HAT LED matrix"
 license = "MIT OR Apache-2.0"
