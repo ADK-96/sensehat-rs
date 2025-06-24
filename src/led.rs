@@ -49,13 +49,13 @@ impl LedMatrix {
     /// * `Ok(())` on success.
     /// * `Err` on I/O error.
     pub fn clear(&mut self) -> Result<()> {
-        for y in 0..8 {
-            for x in 0..8 {
-                self.set_pixel(x, y, 0, 0, 0)?;
-            }
-        }
+        // For 8x8, RGB565: 8*8*2 = 128 bytes
+        let zeros = [0u8; 128];
+        self.fb.seek(SeekFrom::Start(0))?;
+        self.fb.write_all(&zeros)?;
         Ok(())
     }
+
 }
 
 /// Helper: Converts 8-bit RGB to 16-bit RGB565 color format for the framebuffer.
